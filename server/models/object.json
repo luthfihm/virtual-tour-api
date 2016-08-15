@@ -1,0 +1,43 @@
+{
+  "name": "object",
+  "plural": "objects",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "title"
+    },
+    "location": {
+      "type": "string",
+      "required": true,
+      "default": "location"
+    },
+    "geoLocation": {
+      "type": "geopoint",
+      "required": true,
+      "default": {
+        "lat": 0,
+        "lng": 0
+      }
+    },
+    "imageUrl": {
+      "type": "string",
+      "required": true,
+      "default": "http://"
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "default": "description"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
